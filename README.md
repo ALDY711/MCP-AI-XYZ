@@ -10,6 +10,40 @@
 
 ---
 
+## ⚡ CARA CEPAT: PEMASANGAN SATU BARIS (CARA 2 - ONE-LINER CURL)
+> **Paling direkomendasikan jika Anda ingin memasang seluruh arsenal MCP ini secara instan TANPA PERLU `git clone`!**
+
+Cukup salin dan jalankan satu baris perintah sakti ini di terminal Linux / macOS / WSL Anda:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ALDY711/MCP-AI-XYZ/main/install-remote.sh | bash
+```
+
+### Apa yang Otomatis Dilakukan oleh Perintah Ini?
+1. Mengunduh rilis tarball terbaru langsung dari GitHub `ALDY711/MCP-AI-XYZ` tanpa perlu Git.
+2. Mengekstrak seluruh berkas ke direktori mandiri: `~/.mcp-ai-xyz/`.
+3. Memasang pustaka resmi `@modelcontextprotocol/sdk`.
+4. Menguji sintaks dan kesiapan protokol JSON-RPC 2.0 Stdio.
+5. Otomatis menyuntikkan konfigurasi ke `~/.gemini/config/mcp_config.json`.
+
+### Konfigurasi Siap Tempel untuk Claude Desktop / Cursor / Windsurf / Cline:
+Setelah perintah di atas selesai, tambahkan blok JSON berikut ke pengaturan MCP aplikasi Anda:
+
+```json
+{
+  "mcpServers": {
+    "antigravity-master": {
+      "command": "node",
+      "args": ["/home/YOUR_USERNAME/.mcp-ai-xyz/mcp-server/server.js"],
+      "disabled": false
+    }
+  }
+}
+```
+*(Catatan: Ganti `/home/YOUR_USERNAME` sesuai dengan direktori `$HOME` pada komputer Anda).*
+
+---
+
 ## 📖 MUKADIMAH & DESKRIPSI PROYEK
 
 **`MCP-AI-XYZ`** adalah peladen terpadu (*Unified Master MCP Gateway Server*) yang mengonvergensi seluruh perbendaharaan kustomisasi sistem **Antigravity** ke dalam satu gerbang tunggal berbasis standar terbuka **Model Context Protocol (MCP)**.
