@@ -123,7 +123,37 @@ MCP-AI-XYZ/
 
 ---
 
-## 🚀 PANDUAN PEMASANGAN LENGKAP (*STEP-BY-STEP*)
+## ⚡ CARA MEMASANG TANPA GIT CLONE (ZERO-CLONE SETUP)
+
+Paduka dan pengguna lain dapat menikmati peladen ini secara instan **tanpa perlu melakukan git clone secara manual**. Pilih salah satu dari dua cara sakti berikut:
+
+### 🌟 Opsi A: Menggunakan `npx` Langsung di Klien AI (Paling Ringkas & Otomatis)
+Tidak perlu mengunduh atau mengekstrak folder apa pun ke komputer Anda! Cukup daftarkan konfigurasi berikut ke Claude Desktop, Cursor, Windsurf, atau Antigravity Anda:
+
+```json
+{
+  "mcpServers": {
+    "antigravity-master": {
+      "command": "npx",
+      "args": ["-y", "github:ALDY711/MCP-AI-XYZ"]
+    }
+  }
+}
+```
+*Ketika aplikasi AI Anda menyala, `npx` secara otomatis akan mengunduh repositori GitHub, memasang pustaka yang diperlukan di cache sementara, dan mengeksekusi peladen MCP secara mulus.*
+
+---
+
+### 🚀 Opsi B: Skrip Otomatis Satu Baris Terminal (One-Liner Curl)
+Jika Anda ingin memasangnya ke direktori lokal tanpa menggunakan Git:
+```bash
+curl -fsSL https://raw.githubusercontent.com/ALDY711/MCP-AI-XYZ/main/install-remote.sh | bash
+```
+*Perintah ini akan mengunduh arsip repositori langsung dari GitHub, mengekstraknya ke `~/.mcp-ai-xyz`, dan otomatis menyuntikkannya ke sistem Antigravity.*
+
+---
+
+## 🚀 PANDUAN PEMASANGAN LENGKAP (DENGAN GIT CLONE)
 
 ### Prasyarat Sistem
 * **Node.js**: Versi 18.0.0 atau lebih baru (`node -v`)

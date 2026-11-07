@@ -1,0 +1,32 @@
+{
+  "name": "mcp-ai-xyz",
+  "version": "1.0.0",
+  "description": "Antigravity Master MCP Gateway: All-in-One AI Agent Arsenal",
+  "type": "module",
+  "main": "mcp-server/server.js",
+  "bin": {
+    "mcp-ai-xyz": "./mcp-server/server.js",
+    "antigravity-master": "./mcp-server/server.js"
+  },
+  "scripts": {
+    "start": "node mcp-server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ALDY711/MCP-AI-XYZ.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "antigravity",
+    "ai-agents",
+    "claude",
+    "cursor",
+    "reverse-engineering"
+  ],
+  "author": "ALDY711",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  }
+}
