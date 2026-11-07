@@ -1,0 +1,1 @@
+{"name":"get_forex_rates","description":"Get current live forex rates for major currency pairs including EUR/USD, GBP/USD, USD/JPY, XAU/USD (gold), and more.","parameters":{"properties":{},"type":"object"}}

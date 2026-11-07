@@ -1,0 +1,16 @@
+{
+  "name": "antigravity-master-mcp",
+  "version": "1.0.0",
+  "description": "Unified Master MCP Gateway Server for Antigravity: Aggregating Skills, Rules, Execution Tools, and REA/Forex/Thinking Gateways",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "antigravity-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id":  "2f17c0ad-9ef9-4f0d-b835-61ea445be49b",
+  "name":  "EA-treding",
+  "projectResources":  {
+    "resources":  [
+      {
+        "folderUri":  "file:///home/ubuntu/script-ea/EA-treding"
+      }
+    ]
+  },
+  "permissionGrants":  {
+    "v2Migrated":  true
+  },
+  "settings":  {},
+  "isWorkspaceOnly":  false
+}

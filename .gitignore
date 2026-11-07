@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+mcp-server/node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and runtime
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

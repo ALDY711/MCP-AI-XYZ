@@ -1,0 +1,1 @@
+{"name":"compare_brokers","description":"Compare two forex brokers side by side on spreads, regulation, platforms, minimum deposit, and more.","parameters":{"properties":{"broker_a":{"description":"First broker slug (e.g., exness)","type":"string"},"broker_b":{"description":"Second broker slug (e.g., xm)","type":"string"}},"required":["broker_a","broker_b"],"type":"object"}}

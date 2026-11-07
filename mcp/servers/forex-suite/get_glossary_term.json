@@ -1,0 +1,1 @@
+{"name":"get_glossary_term","description":"Get the definition of a forex trading term (e.g., pip, spread, leverage, margin, lot, ECN, swap, etc.)","parameters":{"properties":{"term":{"description":"The forex term to look up (e.g., pip, spread, leverage)","type":"string"}},"required":["term"],"type":"object"}}

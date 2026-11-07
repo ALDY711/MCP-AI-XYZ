@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "forex-suite": {
+      "args": [
+        "-y",
+        "forex-mobile-mcp"
+      ],
+      "command": "npx",
+      "disabled": false
+    },
+    "rea": {
+      "args": [
+        "mcp"
+      ],
+      "command": "/usr/local/bin/rea"
+    },
+    "sequential-thinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "command": "npx",
+      "disabled": false
+    }
+  }
+}

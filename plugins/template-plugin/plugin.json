@@ -1,0 +1,15 @@
+{
+  "name": "template-antigravity-kit",
+  "description": "Template bundel plugin resmi untuk kustomisasi Antigravity CLI",
+  "version": "1.0.0",
+  "author": "Antigravity Core Guild",
+  "homepage": "https://github.com/google/antigravity",
+  "rules": [
+    "rules/AGENTS.md"
+  ],
+  "skills": [
+    "skills/"
+  ],
+  "mcp_config": "mcp_config.json",
+  "hooks": "hooks.json"
+}

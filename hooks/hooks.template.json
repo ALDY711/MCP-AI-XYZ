@@ -1,0 +1,32 @@
+{
+  "lint-checker": {
+    "enabled": true,
+    "PostToolUse": [
+      {
+        "matcher": "write_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[HOOK] Memeriksa integritas berkas setelah penulisan...' && exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "safety-gate": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[HOOK] Memverifikasi keselamatan perintah terminal sebelum eksekusi...' && exit 0",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

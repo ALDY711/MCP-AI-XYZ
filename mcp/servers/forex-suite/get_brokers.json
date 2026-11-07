@@ -1,0 +1,1 @@
+{"name":"get_brokers","description":"Get a list of all forex brokers reviewed by forex.mobile with scores, spreads, regulation, minimum deposits, and platforms. Updated April 2026.","parameters":{"properties":{},"type":"object"}}
