@@ -44,6 +44,40 @@ Setelah perintah di atas selesai, tambahkan blok JSON berikut ke pengaturan MCP 
 
 ---
 
+### 🪟 Panduan Khusus Pengguna Windows (Tanpa Git Clone)
+
+Bagi Anda yang menggunakan **Microsoft Windows 10 / 11**, tersedia cara yang sama mudahnya:
+
+#### Opsi 1: Satu Baris PowerShell (One-Liner Paling Direkomendasikan di Windows)
+Buka **PowerShell** (tekan `Win + X`, lalu pilih **Windows PowerShell** atau **Terminal**), lalu salin dan jalankan:
+
+```powershell
+irm https://raw.githubusercontent.com/ALDY711/MCP-AI-XYZ/main/install-windows.ps1 | iex
+```
+*Skrip ini akan otomatis mengunduh, mengekstrak ke `C:\Users\NamaAnda\.mcp-ai-xyz`, memasang dependensi Node.js, dan menampilkan konfigurasi siap pakai.*
+
+#### Opsi 2: Langsung via `npx` di Konfigurasi MCP Windows (Nol Unduhan Manual)
+Tanpa menjalankan skrip apa pun, cukup tambahkan konfigurasi berikut ke Claude Desktop (`%APPDATA%\Claude\claude_desktop_config.json`) atau Cursor di Windows:
+
+```json
+{
+  "mcpServers": {
+    "antigravity-master": {
+      "command": "cmd.exe",
+      "args": ["/c", "npx -y github:ALDY711/MCP-AI-XYZ"]
+    }
+  }
+}
+```
+
+#### Opsi 3: Menggunakan Git Bash atau WSL
+Jika Anda membuka terminal **Git Bash** atau **WSL (Ubuntu di Windows)**, perintah curl Linux berjalan 100% identik:
+```bash
+curl -fsSL https://raw.githubusercontent.com/ALDY711/MCP-AI-XYZ/main/install-remote.sh | bash
+```
+
+---
+
 ## 📖 MUKADIMAH & DESKRIPSI PROYEK
 
 **`MCP-AI-XYZ`** adalah peladen terpadu (*Unified Master MCP Gateway Server*) yang mengonvergensi seluruh perbendaharaan kustomisasi sistem **Antigravity** ke dalam satu gerbang tunggal berbasis standar terbuka **Model Context Protocol (MCP)**.
